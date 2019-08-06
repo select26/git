@@ -1,0 +1,4 @@
+git config --global user.name "Dennis Chertkov"
+git config --global user.email "Dennis@Chertkov.info"
+git config --list
+
