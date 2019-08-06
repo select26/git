@@ -1,3 +1,5 @@
+#git config --replace-all credential.helper ""		!! Clear ALL GLOBAL credential
+#git config --local credential.helper ""		!! Clear ALL LOCAL credential
 git config --global user.name "Dennis Chertkov"
 git config --global user.email "Dennis@Chertkov.info"
 git config --list
@@ -17,11 +19,30 @@ git branch  test 		!! new branch
 git log --oneline --graph 
 
 git checkout test		!! switch to branch test
+git checkout 74a73		!! switch to commit 74a73
 git commit -m "3-nd commit (1-st on first branch)"
 git log --oneline --graph 
 
 git checkout master		!! switch to master branch
+#git checkout -b test		!! CREATE branch test & SWITCH to test branch
 git log --oneline --graph 
 
 git branch			!! list all branches
 
+git merge test			!! merging
+git commit			!! fix conflicts
+
+git merge test	--no-ff		!! with NO FastForward!! - save history!
+
+#git rebase			!! rebase
+#git rebase --continue		!! rebase - continue
+#git rebase --abort		!! rebase - continue
+#
+#Best practice - to master always doing merge, from master always doing rebase
+
+git reflog			!! history of HEAD movement
+
+git revert			!! otcat s istoriey - sozdaet dopolnitelny commit s sostoyaniem predidushego
+git reset --hard		!! otcat (sdvig MASTER) na shag nazad bez istorii
+git reset --soft		!! otcat (sdvig MASTER) na shag nazad bez istorii NE MENYAYA TECUSHEY FAILOVOY SYSTEMI !!
+git cherry-pick 17f11		!! merge with commit # 17f11
