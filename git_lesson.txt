@@ -1,4 +1,13 @@
 git config --global user.name "Dennis Chertkov"
 git config --global user.email "Dennis@Chertkov.info"
 git config --list
+git init
 
+git status
+git add *.txt
+git status
+
+git cat-file -p 30d74d258442c7c65512eafab474568dd706c430
+
+git commit -m "first commit"
+git status
