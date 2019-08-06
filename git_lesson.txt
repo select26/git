@@ -24,3 +24,4 @@ git checkout master		!! switch to master branch
 git log --oneline --graph 
 
 git branch			!! list all branches
+
