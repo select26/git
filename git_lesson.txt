@@ -1,3 +1,4 @@
+#https://danielkummer.github.io/git-flow-cheatsheet/index.ru_RU.html
 #git config --replace-all credential.helper ""		!! Clear ALL GLOBAL credential
 #git config --local credential.helper ""		!! Clear ALL LOCAL credential
 git config --global user.name "Dennis Chertkov"
@@ -29,7 +30,7 @@ git log --oneline --graph
 
 git branch			!! list all branches
 
-git merge test			!! merging
+git merge test			!! merging	
 git commit			!! fix conflicts
 
 git merge test	--no-ff		!! with NO FastForward!! - save history!
@@ -46,3 +47,8 @@ git revert			!! otcat s istoriey - sozdaet dopolnitelny commit s sostoyaniem pre
 git reset --hard		!! otcat (sdvig MASTER) na shag nazad bez istorii
 git reset --soft		!! otcat (sdvig MASTER) na shag nazad bez istorii NE MENYAYA TECUSHEY FAILOVOY SYSTEMI !!
 git cherry-pick 17f11		!! merge with commit # 17f11
+
+git clone
+git push
+git pull			!! merge from remote
+git fetch			!! rebase from remote
